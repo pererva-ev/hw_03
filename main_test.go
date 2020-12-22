@@ -22,10 +22,10 @@ func genarateMatrix() (res [][]int) {
 
 func TestPositiveSlice(t *testing.T) {
 	matrix := genarateMatrix()
-	fmt.Println("Input:")
+	fmt.Println("Matrix:")
 	for i := range matrix {
 		fmt.Println(matrix[i])
 	}
 	res := arrayFromMatrix(&matrix)
-	fmt.Printf("\nOutput: %v", res)
+	fmt.Printf("\nArray: %v", res)
 }
